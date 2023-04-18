@@ -7,30 +7,34 @@ class ListviewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Listview Type 1"),
-          elevation: 0,
+          title: const Text("Crear Cuenta"),
+          elevation: 1,
           backgroundColor: Colors.indigo,
         ),
-        body: const Stack(
+        body: Stack(
           children: <Widget>[
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Enter a message',
-              ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.red,
             ),
-            SizedBox(height: 20),
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Enter a message',
-              ),
+            const SizedBox(height: 10),
+            Container(
+              width: 90,
+              height: 90,
+              color: Colors.green,
             ),
-            SizedBox(height: 30),
-            TextField(
+            const SizedBox(height: 10),
+            Container(
+              width: 80,
+              height: 80,
+              color: Colors.blue,
+            ),
+            const SizedBox(height: 10),
+            const TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Enter a message',
+                labelText: 'Digita tu nombre',
               ),
             ),
           ],

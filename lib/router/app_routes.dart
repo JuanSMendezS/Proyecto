@@ -14,7 +14,7 @@ class AppRoutes {
     MenuOption(
         route: 'listview1',
         icon: Icons.person_add_alt,
-        name: 'Segunda Pantalla',
+        name: 'Registro',
         screen: const ListviewScreen()),
     MenuOption(
         route: 'card',
