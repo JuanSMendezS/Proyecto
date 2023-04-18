@@ -13,17 +13,17 @@ class AppRoutes {
         screen: const HomeScreen()),
     MenuOption(
         route: 'listview1',
-        icon: Icons.list_alt_sharp,
+        icon: Icons.person_add_alt,
         name: 'Segunda Pantalla',
         screen: const ListviewScreen()),
     MenuOption(
         route: 'card',
-        icon: Icons.card_giftcard,
+        icon: Icons.view_list,
         name: 'Tercera Pantalla',
         screen: const CardScreen()),
     MenuOption(
         route: 'alert',
-        icon: Icons.alternate_email,
+        icon: Icons.settings,
         name: 'Cuarta Pantalla',
         screen: const AlertScreen())
   ];
@@ -31,7 +31,7 @@ class AppRoutes {
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
     for (final option in menuOptions) {
-      appRoutes.addAll({option.name: (BuildContext context) => option.screen});
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
     }
     return appRoutes;
   }
