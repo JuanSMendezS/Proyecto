@@ -7,11 +7,6 @@ class AppRoutes {
 
   static final menuOptions = <MenuOption>[
     MenuOption(
-        route: 'home',
-        icon: Icons.home_max_sharp,
-        name: 'Home Screen',
-        screen: const HomeScreen()),
-    MenuOption(
         route: 'listview1',
         icon: Icons.person_add_alt,
         name: 'Registro',
@@ -33,6 +28,9 @@ class AppRoutes {
     for (final option in menuOptions) {
       appRoutes.addAll({option.route: (BuildContext context) => option.screen});
     }
+    appRoutes
+        .addAll({intialRoute: (BuildContext context) => const HomeScreen()});
+
     return appRoutes;
   }
 
