@@ -8,11 +8,12 @@ class AppSettingsScreen extends StatefulWidget {
 }
 
 class _AppSettingsScreenState extends State<AppSettingsScreen> {
+  bool isChecked = false;
+  bool isChecked1 = false;
+  bool isChecked2 = false;
+  bool isChecked3 = false;
   @override
   Widget build(BuildContext context) {
-    bool isChecked = false;
-    bool isChecked1 = false;
-    bool isChecked2 = false;
     return Scaffold(
       appBar: AppBar(
         title: const Text('CONFIGURACIÓN'),
@@ -29,30 +30,31 @@ class _AppSettingsScreenState extends State<AppSettingsScreen> {
             onChanged: (value) => setState(() {
               isChecked = value ?? false;
             }),
+            activeColor: Colors.amber,
           ),
           CheckboxListTile(
             title: const Text('Vibración'),
             value: isChecked1,
-            onChanged: (value) {
-              isChecked1 = value ?? true;
-              setState(() {});
-            },
+            onChanged: (value) => setState(() {
+              isChecked1 = value ?? false;
+            }),
+            activeColor: Colors.amber,
           ),
           CheckboxListTile(
             title: const Text('Sonido'),
             value: isChecked2,
-            onChanged: (value) {
-              isChecked2 = value ?? true;
-              setState(() {});
-            },
+            onChanged: (value) => setState(() {
+              isChecked2 = value ?? false;
+            }),
+            activeColor: Colors.amber,
           ),
           CheckboxListTile(
             title: const Text('Cambiar apariencia'),
-            value: isChecked2,
-            onChanged: (value) {
-              isChecked2 = value ?? false;
-              setState(() {});
-            },
+            value: isChecked3,
+            onChanged: (value) => setState(() {
+              isChecked3 = value ?? false;
+            }),
+            activeColor: Colors.amber,
           )
         ],
       ),
