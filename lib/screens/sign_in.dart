@@ -8,36 +8,45 @@ class ListviewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Crear Cuenta"),
-        elevation: 1,
-        backgroundColor: Colors.indigo,
       ),
       body: Column(
         children: [
-          Container(
-            width: 80,
-            height: 80,
-            color: Colors.blue,
+          const SizedBox(height: 10),
+          const Icon(
+            Icons.account_circle,
+            size: 80,
           ),
           const SizedBox(height: 10),
           const TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
+              border:
+                  OutlineInputBorder(gapPadding: BorderSide.strokeAlignCenter),
               labelText: 'Digita tu nombre',
             ),
           ),
           const SizedBox(height: 10),
           const TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
+              border:
+                  OutlineInputBorder(gapPadding: BorderSide.strokeAlignCenter),
               labelText: 'Digita tu correo',
             ),
           ),
           const SizedBox(height: 10),
           const TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
+              border:
+                  OutlineInputBorder(gapPadding: BorderSide.strokeAlignCenter),
               labelText: 'Digita tu contraseña',
             ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          TextButton(
+            onPressed: () {},
+            style: TextButton.styleFrom(primary: Colors.indigo),
+            child: const Text('Registrar'),
           )
         ],
       ),

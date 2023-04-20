@@ -14,13 +14,13 @@ class AppRoutes {
     MenuOption(
         route: 'card',
         icon: Icons.view_list,
-        name: 'Tercera Pantalla',
+        name: 'Temáticas',
         screen: const CardScreen()),
     MenuOption(
-        route: 'alert',
+        route: 'settings',
         icon: Icons.settings,
-        name: 'Cuarta Pantalla',
-        screen: const AlertScreen())
+        name: 'Ajustes',
+        screen: const AppSettingsScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
@@ -43,7 +43,7 @@ class AppRoutes {
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
-      builder: (context) => const AlertScreen(),
+      builder: (context) => const AppSettingsScreen(),
     );
   }
 }

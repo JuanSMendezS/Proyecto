@@ -1,4 +1,5 @@
 import 'package:course/router/app_routes.dart';
+import 'package:course/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,11 +11,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('COMPUTACIÓN MOVÍL'),
-        elevation: 0,
       ),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
-                leading: Icon(menuOptions[index].icon),
+                leading: Icon(
+                  menuOptions[index].icon,
+                  color: AppTheme.primary,
+                ),
                 title: Text(menuOptions[index].name),
                 onTap: () {
                   Navigator.pushNamed(context, menuOptions[index].route);
