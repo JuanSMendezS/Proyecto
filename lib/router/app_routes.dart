@@ -7,15 +7,15 @@ class AppRoutes {
 
   static final menuOptions = <MenuOption>[
     MenuOption(
-        route: 'listview1',
+        route: 'signin',
         icon: Icons.person_add_alt,
         name: 'Registro',
-        screen: const ListviewScreen()),
+        screen: const SignInScreen()),
     MenuOption(
-        route: 'card',
+        route: 'list',
         icon: Icons.view_list,
         name: 'Temáticas',
-        screen: const CardScreen()),
+        screen: const ListScreen()),
     MenuOption(
         route: 'settings',
         icon: Icons.settings,
