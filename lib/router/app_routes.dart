@@ -20,7 +20,12 @@ class AppRoutes {
         route: 'settings',
         icon: Icons.settings,
         name: 'Ajustes',
-        screen: const AppSettingsScreen())
+        screen: const AppSettingsScreen()),
+    MenuOption(
+        route: 'login',
+        icon: Icons.login,
+        name: 'Inicio de Sesión',
+        screen: const LogInScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
