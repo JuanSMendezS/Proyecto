@@ -26,6 +26,11 @@ class AppRoutes {
         icon: Icons.login,
         name: 'Inicio de Sesión',
         screen: const LogInScreen()),
+    MenuOption(
+        route: 'alert',
+        icon: Icons.ring_volume,
+        name: 'Alertas',
+        screen: const AlertScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

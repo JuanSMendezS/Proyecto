@@ -1,3 +1,4 @@
+export 'package:course/screens/alert_screen.dart';
 export 'package:course/screens/app_settings.dart';
 export 'package:course/screens/list.dart';
 export 'package:course/screens/sign_in.dart';

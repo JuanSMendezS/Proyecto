@@ -11,5 +11,11 @@ class AppTheme {
       primaryColor: Colors.indigo,
       appBarTheme: const AppBarTheme(color: primary, elevation: 0),
       useMaterial3: true,
-      scaffoldBackgroundColor: Colors.white);
+      scaffoldBackgroundColor: Colors.white,
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: primary, elevation: 5),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            primary: Colors.indigo, shape: const StadiumBorder(), elevation: 0),
+      ));
 }
