@@ -34,6 +34,7 @@ class SignInScreen extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           const TextField(
+            obscureText: true,
             decoration: InputDecoration(
               border:
                   OutlineInputBorder(gapPadding: BorderSide.strokeAlignCenter),
