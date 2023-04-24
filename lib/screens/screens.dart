@@ -1,5 +1,6 @@
-export 'package:course/screens/alert_screen.dart';
-export 'package:course/screens/card_screen.dart';
-export 'package:course/screens/listview1_screen.dart';
+export 'package:course/screens/app_settings.dart';
+export 'package:course/screens/list.dart';
+export 'package:course/screens/sign_in.dart';
+export 'package:course/screens/log_in.dart';
 
 export 'home_screen.dart';
